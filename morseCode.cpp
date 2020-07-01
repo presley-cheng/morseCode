@@ -63,8 +63,8 @@ int main() {
       }
       case 2: {
         // whenever we encounter a space or a "/" (indicating a [SPACE])
-        //we will run a linear search to check if match that will give us nlog(n)
-        //assuming we have n morse codes to translate
+        // we will run a linear search to check if match that will give us nlog(n)
+        // assuming we have n morse codes to translate
         string morse = "";
         string String = "";
         int arrLength = sizeof(morseCode)/sizeof(morseCode[0]);
@@ -75,7 +75,7 @@ int main() {
             << "Enter morse code: ";
         cin.ignore();
         getline(cin, morse);
-        //adding space so trigger the search for the last letter
+        // adding space to trigger the search for the last letter
         morse = morse + " ";
 
         cout << "English:" << endl;
@@ -93,6 +93,7 @@ int main() {
             }
             cout << (found ? english[count] : "?");
             cout << (code == ' ' ? "" : " ");
+            // refresh the string buffer
             String = "";
           }
           else {
@@ -107,6 +108,7 @@ int main() {
       }
       default: {
         cout << "Invalid option!" << endl;
+        cin.ignore();
         break;
       }
     }
