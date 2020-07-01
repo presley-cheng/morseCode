@@ -63,7 +63,7 @@ int main() {
       }
       case 2: {
         // whenever we encounter a space or a "/" (indicating a [SPACE])
-        //we will run a binar search to check if match that will give us nlog(n)
+        //we will run a linear search to check if match that will give us nlog(n)
         //assuming we have n morse codes to translate
         string morse = "";
         string String = "";
